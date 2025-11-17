@@ -1,0 +1,31 @@
+.movie-card {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    transition: transform 0.2s ease;
+  }
+  
+  .movie-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .movie-info {
+    margin-top: 0.5rem;
+  }
+  
+  .movie-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+  }
+  
+  .movie-year {
+    color: #aaa;
+    font-size: 0.9rem;
+  }
+  
+  .movie-rating {
+    margin-top: 0.3rem;
+    color: #e6b400;
+    font-weight: bold;
+  }
+  
