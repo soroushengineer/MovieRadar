@@ -1,0 +1,47 @@
+.details-skeleton {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .skeleton-poster {
+    width: 280px;
+    height: 420px;
+    background: linear-gradient(90deg, #222 25%, #333 37%, #222 63%);
+    background-size: 400% 100%;
+    border-radius: 8px;
+    animation: shimmer 1.4s ease infinite;
+  }
+  
+  .details-text {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .skeleton-line {
+    height: 18px;
+    background: linear-gradient(90deg, #222 25%, #333 37%, #222 63%);
+    background-size: 400% 100%;
+    border-radius: 4px;
+    animation: shimmer 1.4s ease infinite;
+    margin-bottom: 0.7rem;
+  }
+  
+  .skeleton-line.title {
+    height: 28px;
+    width: 70%;
+  }
+  
+  .skeleton-line.short {
+    width: 40%;
+  }
+  
+  .skeleton-line.desc {
+    height: 14px;
+  }
+  
+  @keyframes shimmer {
+    0% { background-position: 100% 0; }
+    100% { background-position: -100% 0; }
+  }
+  

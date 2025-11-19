@@ -3,16 +3,18 @@ import { useMovies } from "../hooks/useMovies";
 import { useMovieSearch } from "../hooks/useMovieSearch";
 import SearchBar from "../components/SearchBar";
 import MovieGrid from "../components/MovieGrid";
+import SkeletonGrid from "../../../components/common/SkeletonGrid";
+
 
 export default function MoviesPage() {
   const { movies, loading, error } = useMovies();
   const [query, setQuery] = useState("");
 
   const { results, loading: searchLoading } = useMovieSearch(query);
+  if (loading) return <SkeletonGrid count={6} />;
 
   const showingSearchResults = query.trim().length > 0;
 
-  if (loading) return <p>Loading movies...</p>;
   if (error) return <p>{error}</p>;
 
   const moviesToShow = showingSearchResults ? results : movies;
@@ -26,7 +28,9 @@ export default function MoviesPage() {
       {showingSearchResults && searchLoading && <p>Searching...</p>}
 
       {moviesToShow.length === 0 ? (
-        <p>No movies found.</p>
+       <p style={{ marginTop: "1rem", color: "#bbb" }}>
+       No movies found. Try another search.
+     </p>
       ) : (
         <MovieGrid movies={moviesToShow} />
       )}

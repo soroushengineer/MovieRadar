@@ -29,3 +29,14 @@
     font-weight: bold;
   }
   
+  @media (max-width: 500px) {
+    .movie-card {
+      width: 160px;
+    }
+  
+    .movie-card img {
+      width: 160px !important;
+      height: 240px !important;
+    }
+  }
+  
