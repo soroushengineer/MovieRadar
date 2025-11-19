@@ -7,7 +7,7 @@ const movies: Movie[] = [
     title: "Inception",
     year: 2010,
     rating: 8.8,
-    poster: "https://m.media-amazon.com/images/I/51xJ6vN9RSL._AC_.jpg",
+    poster: "https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg",
     description: "A thief who steals corporate secrets through dream-sharing technology.",
     genre: ["Sci-Fi", "Action"]
   },
@@ -17,7 +17,7 @@ const movies: Movie[] = [
     year: 2014,
     rating: 8.6,
     poster: "https://m.media-amazon.com/images/I/71niXI3lxlL._AC_SL1024_.jpg",
-    description: "Explorers travel through a wormhole in space in an attempt to save humanity.",
+    description: "The remaining heroes unite to reverse a devastating cosmic catastrophe, embarking on a perilous mission through time to restore balance and save the universe.",
     genre: ["Sci-Fi", "Drama"]
   },
   {
@@ -25,7 +25,7 @@ const movies: Movie[] = [
     title: "The Dark Knight",
     year: 2008,
     rating: 9.0,
-    poster: "https://m.media-amazon.com/images/I/51k0qa6qA3L._AC_.jpg",
+    poster: "https://upload.wikimedia.org/wikipedia/en/1/1c/The_Dark_Knight_%282008_film%29.jpg",
     description: "Batman faces the Joker, a criminal mastermind causing chaos in Gotham.",
     genre: ["Action", "Crime", "Drama"]
   }

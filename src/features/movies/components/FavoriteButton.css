@@ -1,0 +1,16 @@
+.favorite-btn {
+    background-color: #222;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    border: 1px solid #333;
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    transition: background 0.2s ease;
+  }
+  
+  .favorite-btn:hover {
+    background-color: #333;
+    cursor: pointer;
+  }
+  

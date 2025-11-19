@@ -1,12 +1,22 @@
 import { useParams } from "react-router-dom";
+import { useMovieDetails } from "../hooks/useMovieDetails";
+import BackButton from "../components/BackButton";
+import MovieDetails from "../components/MovieDetails";
+import FavoriteButton from "../components/FavoriteButton";
 
 export default function MovieDetailsPage() {
   const { id } = useParams();
+  const { movie, loading, error } = useMovieDetails(id);
+
+  if (loading) return <p>Loading movie...</p>;
+  if (error) return <p>{error}</p>;
+  if (!movie) return <p>Movie not found.</p>;
 
   return (
     <div>
-      <h1>Movie Details</h1>
-      <p>ID: {id}</p>
+      <BackButton />
+      <MovieDetails movie={movie} />
+      <FavoriteButton movie={movie} />
     </div>
   );
 }
